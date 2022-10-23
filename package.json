@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -e ts -x 'npx tsx script.ts'",
     "seed": "npx tsx seed.ts",
+    "start": "npx tsx script.ts",
     "setup": "npm i && npx @edgedb/generate edgeql-js --force-overwrite && npx tsx seed.ts",
     "build": "tsc --incremental",
     "generate": "npx @edgedb/generate edgeql-js --force-overwrite && npx @edgedb/generate queries --file"
