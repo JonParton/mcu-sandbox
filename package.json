@@ -8,13 +8,15 @@
     "dev": "nodemon -e ts -x 'npx tsx script.ts'",
     "seed": "npx tsx seed.ts",
     "setup": "npm i && npx edgeql-js --force-overwrite && npx tsx seed.ts",
-    "build": "tsc --incremental"
+    "build": "tsc --incremental",
+    "generate": "npx @edgedb/generate queries --file"
   },
   "keywords": [],
   "author": "Colin McDonnell",
   "license": "ISC",
   "dependencies": {
-    "edgedb": "^0.21.0"
+    "@edgedb/generate": "^0.0.2",
+    "edgedb": "^1.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -31,7 +33,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
-    "tsx": "^3.8.0",
-    "typescript": "^4.6.2"
+    "tsx": "^3.10.4",
+    "typescript": "^4.8.4"
   }
 }
